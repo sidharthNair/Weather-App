@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AustinTX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:paddingRight="10sp"
+        android:text="Austin, TX"
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="0°"
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/units"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="F / C"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="36sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/temp"
+        app:layout_constraintStart_toEndOf="@+id/temp"
+        app:layout_constraintTop_toTopOf="@+id/temp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="333dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="5sp"
+                android:text="MON\n\n80"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="3"
+                android:shadowDy="-3"
+                android:shadowRadius="1.5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="5sp"
+                android:text="MON\n\n80"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="3"
+                android:shadowDy="-3"
+                android:shadowRadius="1.5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="5sp"
+                android:text="MON\n\n80"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="3"
+                android:shadowDy="-3"
+                android:shadowRadius="1.5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="5sp"
+                android:text="MON\n\n80"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="3"
+                android:shadowDy="-3"
+                android:shadowRadius="1.5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="5sp"
+                android:text="MON\n\n80"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="3"
+                android:shadowDy="-3"
+                android:shadowRadius="1.5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="5sp"
+                android:text="MON\n\n80"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="3"
+                android:shadowDy="-3"
+                android:shadowRadius="1.5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="5sp"
+                android:text="MON\n\n80"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="3"
+                android:shadowDy="-3"
+                android:shadowRadius="1.5"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="337dp"
+        android:layout_height="358dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.36">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="336dp"
+                android:layout_height="570dp">
+
+                <TableRow
+                    android:id="@+id/contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/timeText"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="5sp"
+                        android:text="Time"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/placehold"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="5sp"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tempText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="5sp"
+                        android:text="Temperature"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time1"
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp1"
+                        android:layout_width="145dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time2"
+                        android:layout_width="93dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp2"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time3"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp3"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time4"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp4"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time5"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp5"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time6"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp6"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time7"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp7"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time8"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp8"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time9"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image9"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp9"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time10"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image10"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp10"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time11"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image11"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp11"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/time12"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="9:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image12"
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_0d" />
+
+                    <TextView
+                        android:id="@+id/temp12"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="15sp"
+                        android:paddingBottom="10sp"
+                        android:text="20°"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/TransparentGrey"
+                        android:shadowDx="3"
+                        android:shadowDy="-3"
+                        android:shadowRadius="1.5"
+                        android:textSize="18sp" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/feelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Feels Like: 10°"
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toStartOf="@+id/temp"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Pressure: "
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/humidity"
+        app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Wind: "
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintStart_toStartOf="@+id/feelsLike"
+        app:layout_constraintTop_toBottomOf="@+id/feelsLike" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Humidity: "
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toEndOf="@+id/temp"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Description"
+        android:textColor="@color/white"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/feelsLike"
+        app:layout_constraintEnd_toStartOf="@+id/temp"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="89dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/feelsLike"
+        app:layout_constraintEnd_toStartOf="@+id/temp"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/_2d" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
