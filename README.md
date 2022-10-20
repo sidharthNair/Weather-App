@@ -1,4 +1,4 @@
-# WeatherApp
+# weather-app
 Final Project for EE422C - Android Weather App
 
 Uses [OpenWeatherMap API](https://openweathermap.org/api)
